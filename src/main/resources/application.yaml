@@ -1,3 +1,16 @@
+
 spring:
   application:
     name: minibank-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5436/minibank
+    username: minibank
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
